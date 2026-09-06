@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "1.0.0",
+  "id": "codex",
+  "name": "OpenAI Codex",
+  "category": "CLI / Agent",
+  "vendor": "OpenAI",
+  "author": "OpenAI",
+  "description": "Agente autônomo de código e modelo da OpenAI para execução de instruções, automação e geração de software.",
+  "agentsFormat": "agents_md",
+  "rulesFormat": "yaml_frontmatter",
+  "workspaceAgentsLocation": "AGENTS.md",
+  "workspaceModularAgentsLocation": ".agents/rules/<name>.md",
+  "workspaceRulesLocation": "AGENTS.md",
+  "workspaceSkillsLocation": ".agents/skills/<name>/SKILL.md",
+  "workspaceMcpConfigPath": "codex.json",
+  "globalRulesPath": "~/.codex/rules/",
+  "globalSkillsPath": "~/.codex/skills/",
+  "globalConfigPath": "~/.codex/config.json",
+  "globalBrainPath": "~/.codex",
+  "globalCachePath": "~/.codex/logs",
+  "osDetectedPaths": {
+    "darwin": [
+      "~/.codex",
+      "/usr/local/bin/codex",
+      "/opt/homebrew/bin/codex",
+      "~/.openai"
+    ],
+    "windows": [
+      "%USERPROFILE%\\.codex",
+      "%APPDATA%\\Codex",
+      "%USERPROFILE%\\.openai"
+    ],
+    "linux": [
+      "~/.codex",
+      "/usr/bin/codex",
+      "/usr/local/bin/codex",
+      "~/.openai"
+    ]
+  },
+  "detectedPaths": [
+    "~/.codex"
+  ],
+  "docsUrl": "https://platform.openai.com/docs/guides/code",
+  "badgeColor": "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+  "isBuiltin": true,
+  "icon": "logo.png"
+}

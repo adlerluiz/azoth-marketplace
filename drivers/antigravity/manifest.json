@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "1.0.0",
+  "id": "antigravity",
+  "name": "Antigravity",
+  "category": "IDE / Editor",
+  "vendor": "Google",
+  "author": "DeepMind",
+  "description": "Ambiente de Programação Agêntica com suporte nativo a AGENTS.md, GEMINI.md, .agents/ e MCP Servers.",
+  "agentsFormat": "agents_md",
+  "rulesFormat": "yaml_frontmatter",
+  "workspaceAgentsLocation": "AGENTS.md",
+  "workspaceModularAgentsLocation": ".agents/rules/<name>.md",
+  "workspaceRulesLocation": "AGENTS.md",
+  "workspaceSkillsLocation": ".agents/skills/<name>/SKILL.md",
+  "workspaceMcpConfigPath": "mcp.json",
+  "globalRulesPath": "~/.gemini/antigravity/rules/",
+  "globalSkillsPath": "~/.gemini/antigravity/skills/",
+  "globalConfigPath": "~/.gemini/antigravity/mcp_config.json",
+  "globalBrainPath": "~/.gemini/antigravity/brain",
+  "globalCachePath": "~/.gemini/antigravity/logs",
+  "osDetectedPaths": {
+    "darwin": [
+      "/Applications/Antigravity.app",
+      "~/Applications/Antigravity.app",
+      "~/.gemini/antigravity"
+    ],
+    "windows": [
+      "%LOCALAPPDATA%\\Programs\\Antigravity\\Antigravity.exe",
+      "C:\\Program Files\\Antigravity\\Antigravity.exe",
+      "%USERPROFILE%\\.gemini\\antigravity"
+    ],
+    "linux": [
+      "/usr/bin/antigravity",
+      "/opt/antigravity/antigravity",
+      "~/.local/share/antigravity"
+    ]
+  },
+  "detectedPaths": [
+    "/Applications/Antigravity.app",
+    "~/.gemini/antigravity"
+  ],
+  "docsUrl": "https://antigravity.google/docs/home",
+  "badgeColor": "bg-indigo-500/10 text-indigo-400 border-indigo-500/30",
+  "isBuiltin": true,
+  "icon": "logo.png"
+}

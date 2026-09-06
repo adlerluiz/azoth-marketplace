@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "1.0.0",
+  "id": "kiro",
+  "name": "Kiro",
+  "category": "IDE / Editor",
+  "vendor": "AWS",
+  "author": "AWS",
+  "description": "Ambiente de desenvolvimento agêntico da AWS com suporte a Spec-Driven Development, Steering (.kiro/steering/), MCP Servers e Hooks.",
+  "agentsFormat": "agents_md",
+  "rulesFormat": "yaml_frontmatter",
+  "workspaceAgentsLocation": "AGENTS.md",
+  "workspaceModularAgentsLocation": ".kiro/steering/<name>.md",
+  "workspaceRulesLocation": "AGENTS.md",
+  "workspaceSkillsLocation": ".kiro/skills/<name>/SKILL.md",
+  "workspaceMcpConfigPath": ".kiro/settings/mcp.json",
+  "globalRulesPath": "~/.kiro/steering/",
+  "globalSkillsPath": "~/.kiro/skills/",
+  "globalConfigPath": "~/.kiro/settings/mcp.json",
+  "globalBrainPath": "~/.kiro",
+  "globalCachePath": "~/.kiro/logs",
+  "osDetectedPaths": {
+    "darwin": [
+      "/Applications/Kiro.app",
+      "~/Applications/Kiro.app",
+      "/usr/local/bin/kiro",
+      "/opt/homebrew/bin/kiro",
+      "~/.kiro"
+    ],
+    "windows": [
+      "%LOCALAPPDATA%\\Programs\\Kiro\\Kiro.exe",
+      "C:\\Program Files\\Kiro\\Kiro.exe",
+      "%USERPROFILE%\\.kiro"
+    ],
+    "linux": [
+      "/usr/bin/kiro",
+      "/opt/kiro/kiro",
+      "~/.local/share/kiro",
+      "~/.kiro"
+    ]
+  },
+  "detectedPaths": [
+    "/Applications/Kiro.app",
+    "/usr/local/bin/kiro",
+    "/opt/homebrew/bin/kiro",
+    "~/.kiro"
+  ],
+  "docsUrl": "https://kiro.dev/docs",
+  "badgeColor": "bg-purple-500/10 text-purple-400 border-purple-500/30",
+  "isBuiltin": true,
+  "icon": "logo.png"
+}

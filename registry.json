@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/marketplace.schema.json",
+  "version": "1.0.0",
+  "updatedAt": "2026-09-06T17:16:10.566Z",
+  "name": "Azoth Community Marketplace & Registry",
+  "description": "Repositório central de drivers de IA, assistentes de código e plugins para o ecossistema Azoth / AI Hub.",
+  "drivers": [
+    {
+      "id": "agy",
+      "name": "Antigravity CLI (AGY)",
+      "version": "1.0.0",
+      "author": "DeepMind",
+      "vendor": "Google",
+      "category": "CLI / Agent",
+      "description": "Interface de Linha de Comando (CLI) oficial do Antigravity (AGY) para terminal com suporte a slash commands, subagentes e customizações em ~/.gemini/antigravity-cli/.",
+      "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/agy/logo.png",
+      "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/agy/manifest.json",
+      "docsUrl": "https://antigravity.google/docs/cli/reference",
+      "readmeUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/agy/README.md",
+      "tags": []
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "version": "1.0.0",
+      "author": "DeepMind",
+      "vendor": "Google",
+      "category": "IDE / Editor",
+      "description": "Ambiente de Programação Agêntica com suporte nativo a AGENTS.md, GEMINI.md, .agents/ e MCP Servers.",
+      "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/antigravity/logo.png",
+      "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/antigravity/manifest.json",
+      "docsUrl": "https://antigravity.google/docs/home",
+      "readmeUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/antigravity/README.md",
+      "tags": []
+    },
+    {
+      "id": "claude",
+      "name": "Claude Code & Desktop",
+      "version": "1.0.0",
+      "author": "Anthropic",
+      "vendor": "Anthropic",
+      "category": "CLI / Agent",
+      "description": "CLI oficial Claude Code e aplicativo Claude Desktop com suporte a CLAUDE.md, ~/.claude.json e MCP Servers.",
+      "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/claude/logo.png",
+      "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/claude/manifest.json",
+      "docsUrl": "https://docs.anthropic.com",
+      "readmeUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/claude/README.md",
+      "tags": []
+    },
+    {
+      "id": "codex",
+      "name": "OpenAI Codex",
+      "version": "1.0.0",
+      "author": "OpenAI",
+      "vendor": "OpenAI",
+      "category": "CLI / Agent",
+      "description": "Agente autônomo de código e modelo da OpenAI para execução de instruções, automação e geração de software.",
+      "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/codex/logo.png",
+      "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/codex/manifest.json",
+      "docsUrl": "https://platform.openai.com/docs/guides/code",
+      "readmeUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/codex/README.md",
+      "tags": []
+    },
+    {
+      "id": "copilot",
+      "name": "Copilot",
+      "version": "1.0.0",
+      "author": "GitHub",
+      "vendor": "GitHub / Microsoft",
+      "category": "Extension / Assistant",
+      "description": "GitHub Copilot para VS Code com suporte a .github/copilot-instructions.md.",
+      "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/copilot/logo.png",
+      "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/copilot/manifest.json",
+      "docsUrl": "https://docs.github.com/en/copilot",
+      "readmeUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/copilot/README.md",
+      "tags": []
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro",
+      "version": "1.0.0",
+      "author": "AWS",
+      "vendor": "AWS",
+      "category": "IDE / Editor",
+      "description": "Ambiente de desenvolvimento agêntico da AWS com suporte a Spec-Driven Development, Steering (.kiro/steering/), MCP Servers e Hooks.",
+      "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/kiro/logo.png",
+      "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/kiro/manifest.json",
+      "docsUrl": "https://kiro.dev/docs",
+      "readmeUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/kiro/README.md",
+      "tags": []
+    }
+  ],
+  "plugins": [
+    {
+      "id": "auto-git-sync",
+      "name": "Auto Git Sync",
+      "version": "1.0.0",
+      "author": "Adler",
+      "category": "Sync",
+      "description": "Sincroniza automaticamente regras, skills e perfis do Azoth com um repositório Git privado.",
+      "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/plugins/auto-git-sync/manifest.json",
+      "tags": [
+        "git",
+        "sync",
+        "backup",
+        "automation"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "1.0.0",
+  "id": "copilot",
+  "name": "Copilot",
+  "category": "Extension / Assistant",
+  "vendor": "GitHub / Microsoft",
+  "author": "GitHub",
+  "description": "GitHub Copilot para VS Code com suporte a .github/copilot-instructions.md.",
+  "agentsFormat": "markdown",
+  "rulesFormat": "markdown",
+  "workspaceAgentsLocation": ".github/copilot-instructions.md",
+  "workspaceModularAgentsLocation": ".github/instructions/<name>.md",
+  "workspaceRulesLocation": ".github/copilot-instructions.md",
+  "workspaceSkillsLocation": ".github/copilot-instructions.md",
+  "workspaceMcpConfigPath": ".vscode/settings.json",
+  "globalRulesPath": "~/.config/github-copilot/",
+  "globalSkillsPath": "~/.config/github-copilot/",
+  "globalConfigPath": "~/Library/Application Support/Code/User/settings.json",
+  "globalBrainPath": "~/.config/github-copilot",
+  "globalCachePath": "~/Library/Application Support/Code/User/globalStorage/github.copilot",
+  "osDetectedPaths": {
+    "darwin": [
+      "/Applications/Visual Studio Code.app"
+    ],
+    "windows": [
+      "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe"
+    ],
+    "linux": [
+      "/usr/bin/code"
+    ]
+  },
+  "detectedPaths": [
+    "/Applications/Visual Studio Code.app"
+  ],
+  "docsUrl": "https://docs.github.com/en/copilot",
+  "badgeColor": "bg-blue-500/10 text-blue-400 border-blue-500/30",
+  "isBuiltin": true,
+  "icon": "logo.png"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "auto-git-sync",
+  "name": "Auto Git Sync",
+  "version": "1.0.0",
+  "author": "Adler",
+  "category": "Sync",
+  "description": "Sincroniza automaticamente regras, skills e perfis do Azoth com um repositório Git privado.",
+  "tags": ["git", "sync", "backup", "automation"]
+}

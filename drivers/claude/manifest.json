@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "1.0.0",
+  "id": "claude",
+  "name": "Claude Code & Desktop",
+  "category": "CLI / Agent",
+  "vendor": "Anthropic",
+  "author": "Anthropic",
+  "description": "CLI oficial Claude Code e aplicativo Claude Desktop com suporte a CLAUDE.md, ~/.claude.json e MCP Servers.",
+  "agentsFormat": "markdown",
+  "rulesFormat": "markdown",
+  "workspaceAgentsLocation": "CLAUDE.md",
+  "workspaceModularAgentsLocation": ".claude/rules/<name>.md",
+  "workspaceRulesLocation": "CLAUDE.md",
+  "workspaceSkillsLocation": ".claude/skills/<name>/SKILL.md",
+  "workspaceMcpConfigPath": ".claude/mcp.json",
+  "globalRulesPath": "~/.claude/CLAUDE.md",
+  "globalSkillsPath": "~/.claude/skills/",
+  "globalConfigPath": "~/Library/Application Support/Claude/claude_desktop_config.json",
+  "globalBrainPath": "~/.claude",
+  "globalCachePath": "~/Library/Application Support/Claude",
+  "osDetectedPaths": {
+    "darwin": [
+      "/Applications/Claude.app",
+      "/usr/local/bin/claude",
+      "/opt/homebrew/bin/claude",
+      "~/Library/Application Support/Claude",
+      "~/.claude"
+    ],
+    "windows": [
+      "%LOCALAPPDATA%\\Programs\\Claude\\Claude.exe",
+      "%APPDATA%\\Claude\\claude_desktop_config.json",
+      "%USERPROFILE%\\.claude"
+    ],
+    "linux": [
+      "/usr/bin/claude",
+      "~/.config/Claude/claude_desktop_config.json",
+      "~/.claude"
+    ]
+  },
+  "detectedPaths": [
+    "/Applications/Claude.app",
+    "/usr/local/bin/claude",
+    "/opt/homebrew/bin/claude",
+    "~/.claude"
+  ],
+  "docsUrl": "https://docs.anthropic.com",
+  "badgeColor": "bg-amber-500/10 text-amber-400 border-amber-500/30",
+  "isBuiltin": true,
+  "icon": "logo.png"
+}
