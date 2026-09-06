@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
   "schemaVersion": "1.0.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "id": "agy",
   "name": "Antigravity CLI (AGY)",
   "category": "CLI / Agent",

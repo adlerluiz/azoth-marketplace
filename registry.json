@@ -1,14 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/marketplace.schema.json",
   "version": "1.0.0",
-  "updatedAt": "2026-09-06T17:16:10.566Z",
+  "updatedAt": "2026-09-06T17:44:07.381Z",
   "name": "Azoth Community Marketplace & Registry",
   "description": "Repositório central de drivers de IA, assistentes de código e plugins para o ecossistema Azoth / AI Hub.",
   "drivers": [
     {
       "id": "agy",
       "name": "Antigravity CLI (AGY)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "DeepMind",
       "vendor": "Google",
       "category": "CLI / Agent",

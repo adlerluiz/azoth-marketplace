@@ -52,7 +52,7 @@ azoth-marketplace/
      "docsUrl": "https://meu-assistente.dev/docs"
    }
    ```
-3. *(Opcional)* Adicione `logo.png` (formato quadrado, ex: 128x128px) e `README.md`.
+3. Adicione `logo.png` (formato quadrado, ex: 48x48px) e `README.md`.
 4. Execute `node scripts/build-registry.js` para atualizar o `registry.json`.
 5. Abra um **Pull Request**!
 
