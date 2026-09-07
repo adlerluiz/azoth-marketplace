@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
+  "schemaVersion": "2.0.0",
+  "version": "1.0.0",
+  "id": "cursor",
+  "name": "Cursor IDE",
+  "category": "IDE / Editor",
+  "vendor": "Anysphere",
+  "author": "Anysphere",
+  "description": "Editor de código nativo baseado em IA com suporte a .cursor/rules/ (.mdc), .cursorrules e MCP Servers.",
+  "capabilities": {
+    "skills": true,
+    "modularRules": true,
+    "consolidatedRules": true,
+    "mcp": true,
+    "profiles": true,
+    "slashCommands": false
+  },
+  "rules": {
+    "mode": "both",
+    "consolidatedFile": ".cursorrules",
+    "modularPattern": ".cursor/rules/<name>.mdc",
+    "format": "frontmatter_mdc",
+    "globalLocation": {
+      "darwin": "~/.cursor/rules/",
+      "linux": "~/.cursor/rules/",
+      "windows": "%USERPROFILE%\\.cursor\\rules\\"
+    }
+  },
+  "skills": {
+    "symlinkMode": "file",
+    "workspaceLocation": ".cursor/skills/<name>/SKILL.md",
+    "globalLocation": {
+      "darwin": "~/.cursor/skills/",
+      "linux": "~/.cursor/skills/",
+      "windows": "%USERPROFILE%\\.cursor\\skills\\"
+    }
+  },
+  "mcp": {
+    "rootKey": "mcpServers",
+    "workspaceLocation": ".cursor/mcp.json",
+    "globalLocation": {
+      "darwin": "~/.cursor/mcp.json",
+      "windows": "%USERPROFILE%\\.cursor\\mcp.json",
+      "linux": "~/.cursor/mcp.json"
+    },
+    "format": "json",
+    "supportsEnvResolution": true
+  },
+  "processNames": ["Cursor", "cursor"],
+  "globalBrainPath": "~/.cursor",
+  "globalCachePath": "~/.cursor/logs",
+  "osDetectedPaths": {
+    "darwin": [
+      "/Applications/Cursor.app",
+      "~/.cursor"
+    ],
+    "windows": [
+      "%LOCALAPPDATA%\\Programs\\cursor\\Cursor.exe",
+      "%USERPROFILE%\\.cursor"
+    ],
+    "linux": [
+      "/usr/bin/cursor",
+      "~/.cursor"
+    ]
+  },
+  "detectedPaths": [
+    "/Applications/Cursor.app",
+    "~/.cursor"
+  ],
+  "docsUrl": "https://docs.cursor.com",
+  "badgeColor": "bg-cyan-500/10 text-cyan-400 border-cyan-500/30",
+  "isBuiltin": true,
+  "icon": "logo.png"
+}

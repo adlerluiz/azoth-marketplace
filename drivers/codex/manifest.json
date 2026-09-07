@@ -1,6 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
-  "schemaVersion": "1.0.0",
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
+  "schemaVersion": "2.0.0",
   "version": "1.0.0",
   "id": "codex",
   "name": "OpenAI Codex",
@@ -8,16 +8,46 @@
   "vendor": "OpenAI",
   "author": "OpenAI",
   "description": "Agente autônomo de código e modelo da OpenAI para execução de instruções, automação e geração de software.",
-  "agentsFormat": "agents_md",
-  "rulesFormat": "yaml_frontmatter",
-  "workspaceAgentsLocation": "AGENTS.md",
-  "workspaceModularAgentsLocation": ".agents/rules/<name>.md",
-  "workspaceRulesLocation": "AGENTS.md",
-  "workspaceSkillsLocation": ".agents/skills/<name>/SKILL.md",
-  "workspaceMcpConfigPath": "codex.json",
-  "globalRulesPath": "~/.codex/rules/",
-  "globalSkillsPath": "~/.codex/skills/",
-  "globalConfigPath": "~/.codex/config.json",
+  "capabilities": {
+    "skills": true,
+    "modularRules": true,
+    "consolidatedRules": true,
+    "mcp": true,
+    "profiles": true,
+    "slashCommands": false
+  },
+  "rules": {
+    "mode": "both",
+    "consolidatedFile": "AGENTS.md",
+    "modularPattern": ".agents/rules/<name>.md",
+    "format": "yaml_frontmatter",
+    "globalLocation": {
+      "darwin": "~/.codex/rules/",
+      "linux": "~/.codex/rules/",
+      "windows": "%USERPROFILE%\\.codex\\rules\\"
+    }
+  },
+  "skills": {
+    "symlinkMode": "file",
+    "workspaceLocation": ".agents/skills/<name>/SKILL.md",
+    "globalLocation": {
+      "darwin": "~/.codex/skills/",
+      "linux": "~/.codex/skills/",
+      "windows": "%USERPROFILE%\\.codex\\skills\\"
+    }
+  },
+  "mcp": {
+    "rootKey": "mcpServers",
+    "workspaceLocation": "codex.json",
+    "globalLocation": {
+      "darwin": "~/.codex/config.json",
+      "linux": "~/.codex/config.json",
+      "windows": "%USERPROFILE%\\.codex\\config.json"
+    },
+    "format": "json",
+    "supportsEnvResolution": true
+  },
+  "processNames": ["codex", "openai"],
   "globalBrainPath": "~/.codex",
   "globalCachePath": "~/.codex/logs",
   "osDetectedPaths": {

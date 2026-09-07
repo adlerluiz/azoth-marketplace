@@ -1,41 +1,78 @@
 {
-  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
-  "schemaVersion": "1.0.0",
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
+  "schemaVersion": "2.0.0",
   "version": "1.0.0",
   "id": "copilot",
-  "name": "Copilot",
+  "name": "GitHub Copilot",
   "category": "Extension / Assistant",
   "vendor": "GitHub / Microsoft",
   "author": "GitHub",
-  "description": "GitHub Copilot para VS Code com suporte a .github/copilot-instructions.md.",
-  "agentsFormat": "markdown",
-  "rulesFormat": "markdown",
-  "workspaceAgentsLocation": ".github/copilot-instructions.md",
-  "workspaceModularAgentsLocation": ".github/instructions/<name>.md",
-  "workspaceRulesLocation": ".github/copilot-instructions.md",
-  "workspaceSkillsLocation": ".github/copilot-instructions.md",
-  "workspaceMcpConfigPath": ".vscode/settings.json",
-  "globalRulesPath": "~/.config/github-copilot/",
-  "globalSkillsPath": "~/.config/github-copilot/",
-  "globalConfigPath": "~/Library/Application Support/Code/User/settings.json",
+  "description": "Assistente integrado ao VS Code e ecossistema GitHub com suporte a .github/copilot-instructions.md e custom rules.",
+  "capabilities": {
+    "skills": false,
+    "modularRules": true,
+    "consolidatedRules": true,
+    "mcp": true,
+    "profiles": true,
+    "slashCommands": false
+  },
+  "rules": {
+    "mode": "consolidated",
+    "consolidatedFile": ".github/copilot-instructions.md",
+    "modularPattern": ".github/instructions/<name>.md",
+    "format": "markdown",
+    "globalLocation": {
+      "darwin": "~/.config/github-copilot/instructions.md",
+      "linux": "~/.config/github-copilot/instructions.md",
+      "windows": "%USERPROFILE%\\.config\\github-copilot\\instructions.md"
+    }
+  },
+  "skills": {
+    "symlinkMode": "file",
+    "workspaceLocation": ".github/skills/<name>/SKILL.md",
+    "globalLocation": {
+      "darwin": "~/.config/github-copilot/skills/",
+      "linux": "~/.config/github-copilot/skills/",
+      "windows": "%USERPROFILE%\\.config\\github-copilot\\skills\\"
+    }
+  },
+  "mcp": {
+    "rootKey": "mcpServers",
+    "workspaceLocation": ".vscode/mcp.json",
+    "globalLocation": {
+      "darwin": "~/Library/Application Support/Code/User/settings.json",
+      "windows": "%APPDATA%\\Code\\User\\settings.json",
+      "linux": "~/.config/Code/User/settings.json"
+    },
+    "format": "json",
+    "supportsEnvResolution": true
+  },
+  "processNames": ["Code", "code"],
   "globalBrainPath": "~/.config/github-copilot",
-  "globalCachePath": "~/Library/Application Support/Code/User/globalStorage/github.copilot",
+  "globalCachePath": "~/.config/github-copilot/logs",
   "osDetectedPaths": {
     "darwin": [
-      "/Applications/Visual Studio Code.app"
+      "/Applications/Visual Studio Code.app",
+      "~/.vscode",
+      "~/Library/Application Support/github-copilot"
     ],
     "windows": [
-      "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe"
+      "%LOCALAPPDATA%\\Programs\\Microsoft VS Code\\Code.exe",
+      "%USERPROFILE%\\.vscode",
+      "%APPDATA%\\github-copilot"
     ],
     "linux": [
-      "/usr/bin/code"
+      "/usr/bin/code",
+      "~/.vscode",
+      "~/.config/github-copilot"
     ]
   },
   "detectedPaths": [
-    "/Applications/Visual Studio Code.app"
+    "/Applications/Visual Studio Code.app",
+    "~/.vscode"
   ],
-  "docsUrl": "https://docs.github.com/en/copilot",
-  "badgeColor": "bg-blue-500/10 text-blue-400 border-blue-500/30",
+  "docsUrl": "https://docs.github.com/copilot",
+  "badgeColor": "bg-sky-500/10 text-sky-400 border-sky-500/30",
   "isBuiltin": true,
   "icon": "logo.png"
 }

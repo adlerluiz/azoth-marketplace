@@ -1,6 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
-  "schemaVersion": "1.0.0",
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
+  "schemaVersion": "2.0.0",
   "version": "1.0.0",
   "id": "antigravity",
   "name": "Antigravity",
@@ -8,16 +8,42 @@
   "vendor": "Google",
   "author": "DeepMind",
   "description": "Ambiente de Programação Agêntica com suporte nativo a AGENTS.md, GEMINI.md, .agents/ e MCP Servers.",
-  "agentsFormat": "agents_md",
-  "rulesFormat": "yaml_frontmatter",
-  "workspaceAgentsLocation": "AGENTS.md",
-  "workspaceModularAgentsLocation": ".agents/rules/<name>.md",
-  "workspaceRulesLocation": "AGENTS.md",
-  "workspaceSkillsLocation": ".agents/skills/<name>/SKILL.md",
-  "workspaceMcpConfigPath": "mcp.json",
-  "globalRulesPath": "~/.gemini/antigravity/rules/",
-  "globalSkillsPath": "~/.gemini/antigravity/skills/",
-  "globalConfigPath": "~/.gemini/antigravity/mcp_config.json",
+  "capabilities": {
+    "skills": true,
+    "modularRules": true,
+    "consolidatedRules": true,
+    "mcp": true,
+    "profiles": true,
+    "slashCommands": true
+  },
+  "rules": {
+    "mode": "both",
+    "consolidatedFile": "AGENTS.md",
+    "modularPattern": ".agents/rules/<name>.md",
+    "format": "agents_md",
+    "globalLocation": {
+      "darwin": "~/.gemini/antigravity/rules/",
+      "linux": "~/.gemini/antigravity/rules/",
+      "windows": "%USERPROFILE%\\.gemini\\antigravity\\rules\\"
+    }
+  },
+  "skills": {
+    "symlinkMode": "file",
+    "workspaceLocation": ".agents/skills/<name>/SKILL.md",
+    "globalLocation": {
+      "darwin": "~/.gemini/antigravity/skills/",
+      "linux": "~/.gemini/antigravity/skills/",
+      "windows": "%USERPROFILE%\\.gemini\\antigravity\\skills\\"
+    }
+  },
+  "mcp": {
+    "rootKey": "mcpServers",
+    "workspaceLocation": "mcp.json",
+    "globalLocation": "~/.gemini/antigravity/mcp_config.json",
+    "format": "json",
+    "supportsEnvResolution": true
+  },
+  "processNames": ["Antigravity", "antigravity"],
   "globalBrainPath": "~/.gemini/antigravity/brain",
   "globalCachePath": "~/.gemini/antigravity/logs",
   "osDetectedPaths": {

@@ -1,23 +1,49 @@
 {
-  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
-  "schemaVersion": "1.0.0",
-  "version": "1.0.1",
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
+  "schemaVersion": "2.0.0",
+  "version": "1.0.0",
   "id": "agy",
-  "name": "Antigravity CLI (AGY)",
+  "name": "Agy",
   "category": "CLI / Agent",
   "vendor": "Google",
   "author": "DeepMind",
-  "description": "Interface de Linha de Comando (CLI) oficial do Antigravity (AGY) para terminal com suporte a slash commands, subagentes e customizações em ~/.gemini/antigravity-cli/.",
-  "agentsFormat": "agents_md",
-  "rulesFormat": "yaml_frontmatter",
-  "workspaceAgentsLocation": "AGENTS.md",
-  "workspaceModularAgentsLocation": ".agents/rules/<name>.md",
-  "workspaceRulesLocation": "AGENTS.md",
-  "workspaceSkillsLocation": ".agents/skills/<name>/SKILL.md",
-  "workspaceMcpConfigPath": "mcp.json",
-  "globalRulesPath": "~/.gemini/config/rules/",
-  "globalSkillsPath": "~/.gemini/skills/",
-  "globalConfigPath": "~/.gemini/antigravity-cli/settings.json",
+  "description": "Interface de Linha de Comando (CLI) oficial do Antigravity (AGY) para terminal com suporte a slash commands, subagentes e customizações.",
+  "capabilities": {
+    "skills": true,
+    "modularRules": true,
+    "consolidatedRules": true,
+    "mcp": true,
+    "profiles": true,
+    "slashCommands": true
+  },
+  "rules": {
+    "mode": "both",
+    "consolidatedFile": "AGENTS.md",
+    "modularPattern": ".agents/rules/<name>.md",
+    "format": "agents_md",
+    "globalLocation": {
+      "darwin": "~/.gemini/config/rules/",
+      "linux": "~/.gemini/config/rules/",
+      "windows": "%USERPROFILE%\\.gemini\\config\\rules\\"
+    }
+  },
+  "skills": {
+    "symlinkMode": "file",
+    "workspaceLocation": ".agents/skills/<name>/SKILL.md",
+    "globalLocation": {
+      "darwin": "~/.gemini/skills/",
+      "linux": "~/.gemini/skills/",
+      "windows": "%USERPROFILE%\\.gemini\\skills\\"
+    }
+  },
+  "mcp": {
+    "rootKey": "mcpServers",
+    "workspaceLocation": "mcp.json",
+    "globalLocation": "~/.gemini/antigravity-cli/settings.json",
+    "format": "json",
+    "supportsEnvResolution": true
+  },
+  "processNames": ["agy", "antigravity-cli"],
   "globalBrainPath": "~/.gemini/antigravity-cli/brain",
   "globalCachePath": "~/.gemini/antigravity-cli/log",
   "osDetectedPaths": {

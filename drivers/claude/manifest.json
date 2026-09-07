@@ -1,6 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/adlerluiz/ai-hub/main/schemas/driver.schema.json",
-  "schemaVersion": "1.0.0",
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
+  "schemaVersion": "2.0.0",
   "version": "1.0.0",
   "id": "claude",
   "name": "Claude Code & Desktop",
@@ -8,16 +8,46 @@
   "vendor": "Anthropic",
   "author": "Anthropic",
   "description": "CLI oficial Claude Code e aplicativo Claude Desktop com suporte a CLAUDE.md, ~/.claude.json e MCP Servers.",
-  "agentsFormat": "markdown",
-  "rulesFormat": "markdown",
-  "workspaceAgentsLocation": "CLAUDE.md",
-  "workspaceModularAgentsLocation": ".claude/rules/<name>.md",
-  "workspaceRulesLocation": "CLAUDE.md",
-  "workspaceSkillsLocation": ".claude/skills/<name>/SKILL.md",
-  "workspaceMcpConfigPath": ".claude/mcp.json",
-  "globalRulesPath": "~/.claude/CLAUDE.md",
-  "globalSkillsPath": "~/.claude/skills/",
-  "globalConfigPath": "~/Library/Application Support/Claude/claude_desktop_config.json",
+  "capabilities": {
+    "skills": true,
+    "modularRules": true,
+    "consolidatedRules": true,
+    "mcp": true,
+    "profiles": true,
+    "slashCommands": false
+  },
+  "rules": {
+    "mode": "both",
+    "consolidatedFile": "CLAUDE.md",
+    "modularPattern": ".claude/rules/<name>.md",
+    "format": "markdown",
+    "globalLocation": {
+      "darwin": "~/.claude/CLAUDE.md",
+      "linux": "~/.claude/CLAUDE.md",
+      "windows": "%USERPROFILE%\\.claude\\CLAUDE.md"
+    }
+  },
+  "skills": {
+    "symlinkMode": "file",
+    "workspaceLocation": ".claude/skills/<name>/SKILL.md",
+    "globalLocation": {
+      "darwin": "~/.claude/skills/",
+      "linux": "~/.claude/skills/",
+      "windows": "%USERPROFILE%\\.claude\\skills\\"
+    }
+  },
+  "mcp": {
+    "rootKey": "mcpServers",
+    "workspaceLocation": ".claude/mcp.json",
+    "globalLocation": {
+      "darwin": "~/Library/Application Support/Claude/claude_desktop_config.json",
+      "windows": "%APPDATA%\\Claude\\claude_desktop_config.json",
+      "linux": "~/.config/Claude/claude_desktop_config.json"
+    },
+    "format": "json",
+    "supportsEnvResolution": true
+  },
+  "processNames": ["Claude", "claude"],
   "globalBrainPath": "~/.claude",
   "globalCachePath": "~/Library/Application Support/Claude",
   "osDetectedPaths": {

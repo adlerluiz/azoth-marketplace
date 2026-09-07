@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
+  "schemaVersion": "2.0.0",
+  "version": "1.0.0",
+  "id": "windsurf",
+  "name": "Codeium Windsurf",
+  "category": "IDE / Editor",
+  "vendor": "Codeium",
+  "author": "Codeium",
+  "description": "IDE colaborativa com IA Cascade, suporte a .windsurfrules, regras modulares em .windsurf/ e MCP Servers.",
+  "capabilities": {
+    "skills": true,
+    "modularRules": true,
+    "consolidatedRules": true,
+    "mcp": true,
+    "profiles": true,
+    "slashCommands": false
+  },
+  "rules": {
+    "mode": "both",
+    "consolidatedFile": ".windsurfrules",
+    "modularPattern": ".windsurf/rules/<name>.md",
+    "format": "yaml_frontmatter",
+    "globalLocation": {
+      "darwin": "~/.codeium/windsurf/rules/",
+      "linux": "~/.codeium/windsurf/rules/",
+      "windows": "%USERPROFILE%\\.codeium\\windsurf\\rules\\"
+    }
+  },
+  "skills": {
+    "symlinkMode": "file",
+    "workspaceLocation": ".windsurf/skills/<name>/SKILL.md",
+    "globalLocation": {
+      "darwin": "~/.codeium/windsurf/skills/",
+      "linux": "~/.codeium/windsurf/skills/",
+      "windows": "%USERPROFILE%\\.codeium\\windsurf\\skills\\"
+    }
+  },
+  "mcp": {
+    "rootKey": "mcpServers",
+    "workspaceLocation": ".windsurf/mcp_config.json",
+    "globalLocation": {
+      "darwin": "~/.codeium/windsurf/mcp_config.json",
+      "windows": "%USERPROFILE%\\.codeium\\windsurf\\mcp_config.json",
+      "linux": "~/.codeium/windsurf/mcp_config.json"
+    },
+    "format": "json",
+    "supportsEnvResolution": true
+  },
+  "processNames": ["Windsurf", "windsurf"],
+  "globalBrainPath": "~/.codeium/windsurf",
+  "globalCachePath": "~/.codeium/windsurf/logs",
+  "osDetectedPaths": {
+    "darwin": [
+      "/Applications/Windsurf.app",
+      "~/.codeium/windsurf"
+    ],
+    "windows": [
+      "%LOCALAPPDATA%\\Programs\\Windsurf\\Windsurf.exe",
+      "%USERPROFILE%\\.codeium\\windsurf"
+    ],
+    "linux": [
+      "/usr/bin/windsurf",
+      "~/.codeium/windsurf"
+    ]
+  },
+  "detectedPaths": [
+    "/Applications/Windsurf.app",
+    "~/.codeium/windsurf"
+  ],
+  "docsUrl": "https://codeium.com/windsurf",
+  "badgeColor": "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+  "isBuiltin": true,
+  "icon": "logo.png"
+}
