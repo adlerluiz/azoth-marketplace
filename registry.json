@@ -15,7 +15,7 @@
         "name": "Google"
       },
       "surface": "cli",
-      "description": "Interface de Linha de Comando (CLI) oficial do Antigravity (AGY) para terminal com suporte a slash commands, subagentes e customizações.",
+      "description": "Official Antigravity (AGY) command-line interface for the terminal, supporting slash commands, subagents, and customizations.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/agy/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/agy/manifest.json",
       "docsUrl": "https://antigravity.google/docs/cli/reference",
@@ -32,7 +32,7 @@
         "name": "Google"
       },
       "surface": "agent-app",
-      "description": "Ambiente de Programação Agêntica com suporte nativo a AGENTS.md, GEMINI.md, .agents/ e MCP Servers.",
+      "description": "Agentic programming environment with native support for AGENTS.md, GEMINI.md, .agents/, and MCP servers.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/antigravity/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/antigravity/manifest.json",
       "docsUrl": "https://antigravity.google/docs/home",
@@ -49,7 +49,7 @@
         "name": "Anthropic"
       },
       "surface": "cli",
-      "description": "CLI oficial Claude Code e aplicativo Claude Desktop com suporte a CLAUDE.md, ~/.claude.json e MCP Servers.",
+      "description": "Official Claude Code CLI and Claude Desktop app, with support for CLAUDE.md, ~/.claude.json, and MCP servers.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/claude/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/claude/manifest.json",
       "docsUrl": "https://docs.anthropic.com",
@@ -66,7 +66,7 @@
         "name": "OpenAI"
       },
       "surface": "cli",
-      "description": "Agente autônomo de código e modelo da OpenAI para execução de instruções, automação e geração de software.",
+      "description": "OpenAI's autonomous coding agent and model for instruction execution, automation, and software generation.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/codex/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/codex/manifest.json",
       "docsUrl": "https://platform.openai.com/docs/guides/code",
@@ -83,7 +83,7 @@
         "name": "GitHub / Microsoft"
       },
       "surface": "extension",
-      "description": "Assistente integrado ao VS Code e ecossistema GitHub com suporte a .github/copilot-instructions.md e custom rules.",
+      "description": "Assistant integrated with VS Code and the GitHub ecosystem, supporting .github/copilot-instructions.md and custom rules.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/copilot/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/copilot/manifest.json",
       "docsUrl": "https://docs.github.com/copilot",
@@ -100,7 +100,7 @@
         "name": "Anysphere"
       },
       "surface": "ide",
-      "description": "Editor de código nativo baseado em IA com suporte a .cursor/rules/ (.mdc), .cursorrules e MCP Servers.",
+      "description": "AI-native code editor with support for .cursor/rules/ (.mdc), .cursorrules, and MCP servers.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/cursor/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/cursor/manifest.json",
       "docsUrl": "https://docs.cursor.com",
@@ -117,7 +117,7 @@
         "name": "Amazon Web Services"
       },
       "surface": "ide",
-      "description": "IDE agêntica da AWS com suporte a agentes autônomos, regras modulares e integrações com MCP.",
+      "description": "AWS agentic IDE with support for autonomous agents, modular rules, and MCP integrations.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/kiro/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/kiro/manifest.json",
       "docsUrl": "https://aws.amazon.com/kiro",

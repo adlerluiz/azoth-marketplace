@@ -7,7 +7,7 @@
   "vendor": { "id": "github-microsoft", "name": "GitHub / Microsoft" },
   "surface": "extension",
   "author": "Adler Luiz",
-  "description": "Assistente integrado ao VS Code e ecossistema GitHub com suporte a .github/copilot-instructions.md e custom rules.",
+  "description": "Assistant integrated with VS Code and the GitHub ecosystem, supporting .github/copilot-instructions.md and custom rules.",
   "capabilities": {
     "skills": false,
     "modularRules": true,
@@ -73,6 +73,5 @@
   ],
   "docsUrl": "https://docs.github.com/copilot",
   "badgeColor": "bg-sky-500/10 text-sky-400 border-sky-500/30",
-  "isBuiltin": true,
   "icon": "logo.png"
 }

@@ -7,7 +7,7 @@
   "vendor": { "id": "anysphere", "name": "Anysphere" },
   "surface": "ide",
   "author": "Adler Luiz",
-  "description": "Editor de código nativo baseado em IA com suporte a .cursor/rules/ (.mdc), .cursorrules e MCP Servers.",
+  "description": "AI-native code editor with support for .cursor/rules/ (.mdc), .cursorrules, and MCP servers.",
   "capabilities": {
     "skills": true,
     "modularRules": true,
@@ -70,6 +70,5 @@
   ],
   "docsUrl": "https://docs.cursor.com",
   "badgeColor": "bg-cyan-500/10 text-cyan-400 border-cyan-500/30",
-  "isBuiltin": true,
   "icon": "logo.png"
 }

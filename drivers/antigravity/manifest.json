@@ -7,7 +7,7 @@
   "vendor": { "id": "google", "name": "Google" },
   "surface": "agent-app",
   "author": "Adler Luiz",
-  "description": "Ambiente de Programação Agêntica com suporte nativo a AGENTS.md, GEMINI.md, .agents/ e MCP Servers.",
+  "description": "Agentic programming environment with native support for AGENTS.md, GEMINI.md, .agents/, and MCP servers.",
   "capabilities": {
     "skills": true,
     "modularRules": true,
@@ -69,6 +69,5 @@
   ],
   "docsUrl": "https://antigravity.google/docs/home",
   "badgeColor": "bg-indigo-500/10 text-indigo-400 border-indigo-500/30",
-  "isBuiltin": true,
   "icon": "logo.png"
 }

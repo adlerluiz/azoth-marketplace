@@ -7,7 +7,7 @@
   "vendor": { "id": "google", "name": "Google" },
   "surface": "cli",
   "author": "DeepMind",
-  "description": "Interface de Linha de Comando (CLI) oficial do Antigravity (AGY) para terminal com suporte a slash commands, subagentes e customizações.",
+  "description": "Official Antigravity (AGY) command-line interface for the terminal, supporting slash commands, subagents, and customizations.",
   "capabilities": {
     "skills": true,
     "modularRules": true,
@@ -73,6 +73,5 @@
   ],
   "docsUrl": "https://antigravity.google/docs/cli/reference",
   "badgeColor": "bg-sky-500/10 text-sky-400 border-sky-500/30",
-  "isBuiltin": true,
   "icon": "logo.png"
 }

@@ -1,12 +1,12 @@
 # Kiro
 
-Ambiente de desenvolvimento agêntico da AWS com suporte a Spec-Driven Development, Steering (.kiro/steering/), MCP Servers e Hooks.
+AWS agentic development environment with support for Spec-Driven Development, Steering (.kiro/steering/), MCP servers, and hooks.
 
-## Identificador
+## Identifier
 kiro
 
-## Categoria
+## Category
 IDE / Editor
 
-## Documentação
-Para mais detalhes, consulte: https://kiro.dev/docs
+## Documentation
+For more details, see: https://kiro.dev/docs

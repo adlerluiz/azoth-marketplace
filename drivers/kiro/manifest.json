@@ -7,7 +7,7 @@
   "vendor": { "id": "aws", "name": "Amazon Web Services" },
   "surface": "ide",
   "author": "Adler Luiz",
-  "description": "IDE agêntica da AWS com suporte a agentes autônomos, regras modulares e integrações com MCP.",
+  "description": "AWS agentic IDE with support for autonomous agents, modular rules, and MCP integrations.",
   "capabilities": {
     "skills": true,
     "modularRules": true,
@@ -70,6 +70,5 @@
   ],
   "docsUrl": "https://aws.amazon.com/kiro",
   "badgeColor": "bg-purple-500/10 text-purple-400 border-purple-500/30",
-  "isBuiltin": true,
   "icon": "logo.png"
 }

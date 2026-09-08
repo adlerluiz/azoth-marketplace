@@ -1,12 +1,12 @@
 # OpenAI Codex
 
-Agente autônomo de código e modelo da OpenAI para execução de instruções, automação e geração de software.
+OpenAI's autonomous coding agent and model for instruction execution, automation, and software generation.
 
-## Identificador
+## Identifier
 `codex`
 
-## Categoria
+## Category
 CLI / Agent
 
-## Documentação
-Para mais detalhes, consulte: https://platform.openai.com/docs/guides/code
+## Documentation
+For more details, see: https://platform.openai.com/docs/guides/code

@@ -1,12 +1,12 @@
 # GitHub Copilot
 
-GitHub Copilot para VS Code com suporte a .github/copilot-instructions.md.
+GitHub Copilot for VS Code with support for .github/copilot-instructions.md.
 
-## Identificador
+## Identifier
 
 
-## Categoria
+## Category
 Extension / Assistant
 
-## Documentação
-Para mais detalhes, consulte: https://docs.github.com/en/copilot
+## Documentation
+For more details, see: https://docs.github.com/en/copilot

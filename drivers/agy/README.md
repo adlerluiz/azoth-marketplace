@@ -1,12 +1,12 @@
 # Antigravity CLI (AGY)
 
-Interface de Linha de Comando (CLI) oficial do Antigravity para terminal, com suporte nativo a slash commands, subagentes e customizações em `~/.antigravity/` ou `~/.gemini/antigravity-cli/`.
+Official Antigravity command-line interface for the terminal, with native support for slash commands, subagents, and customizations in `~/.antigravity/` or `~/.gemini/antigravity-cli/`.
 
-## Identificador
+## Identifier
 `agy`
 
-## Categoria
+## Category
 CLI / Agent
 
-## Documentação
-Para mais detalhes, consulte: https://antigravity.google/docs/cli/reference
+## Documentation
+For more details, see: https://antigravity.google/docs/cli/reference

@@ -1,12 +1,12 @@
 # Claude Code & Desktop
 
-CLI oficial Claude Code e aplicativo Claude Desktop com suporte a CLAUDE.md, ~/.claude.json e MCP Servers.
+Official Claude Code CLI and Claude Desktop app, with support for CLAUDE.md, ~/.claude.json, and MCP servers.
 
-## Identificador
+## Identifier
 
 
-## Categoria
+## Category
 CLI / Agent
 
-## Documentação
-Para mais detalhes, consulte: https://docs.anthropic.com
+## Documentation
+For more details, see: https://docs.anthropic.com

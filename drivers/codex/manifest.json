@@ -7,7 +7,7 @@
   "vendor": { "id": "openai", "name": "OpenAI" },
   "surface": "cli",
   "author": "Adler Luiz",
-  "description": "Agente autônomo de código e modelo da OpenAI para execução de instruções, automação e geração de software.",
+  "description": "OpenAI's autonomous coding agent and model for instruction execution, automation, and software generation.",
   "capabilities": {
     "skills": true,
     "modularRules": true,
@@ -74,6 +74,5 @@
   ],
   "docsUrl": "https://platform.openai.com/docs/guides/code",
   "badgeColor": "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
-  "isBuiltin": true,
   "icon": "logo.png"
 }

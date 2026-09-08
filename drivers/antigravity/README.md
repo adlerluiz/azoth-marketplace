@@ -1,12 +1,12 @@
 # Antigravity
 
-Ambiente de Programação Agêntica com suporte nativo a AGENTS.md, GEMINI.md, .agents/ e MCP Servers.
+Agentic programming environment with native support for AGENTS.md, GEMINI.md, .agents/, and MCP servers.
 
-## Identificador
+## Identifier
 
 
-## Categoria
+## Category
 IDE / Editor
 
-## Documentação
-Para mais detalhes, consulte: https://antigravity.google/docs/home
+## Documentation
+For more details, see: https://antigravity.google/docs/home
