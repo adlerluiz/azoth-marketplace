@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
-  "schemaVersion": "2.0.0",
+  "schemaVersion": "1.0.0",
   "version": "1.0.0",
   "id": "codex",
-  "name": "OpenAI Codex",
-  "category": "CLI / Agent",
-  "vendor": "OpenAI",
-  "author": "OpenAI",
+  "name": "Codex",
+  "vendor": { "id": "openai", "name": "OpenAI" },
+  "surface": "cli",
+  "author": "Adler Luiz",
   "description": "Agente autônomo de código e modelo da OpenAI para execução de instruções, automação e geração de software.",
   "capabilities": {
     "skills": true,

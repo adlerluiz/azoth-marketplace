@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
-  "schemaVersion": "2.0.0",
+  "schemaVersion": "1.0.0",
   "version": "1.0.0",
   "id": "antigravity",
   "name": "Antigravity",
-  "category": "IDE / Editor",
-  "vendor": "Google",
-  "author": "DeepMind",
+  "vendor": { "id": "google", "name": "Google" },
+  "surface": "agent-app",
+  "author": "Adler Luiz",
   "description": "Ambiente de Programação Agêntica com suporte nativo a AGENTS.md, GEMINI.md, .agents/ e MCP Servers.",
   "capabilities": {
     "skills": true,

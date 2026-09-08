@@ -41,18 +41,40 @@ azoth-marketplace/
      "version": "1.0.0",
      "id": "meu-assistente",
      "name": "Meu Assistente AI",
-     "category": "IDE / Editor",
-     "vendor": "Minha Empresa",
+     "vendor": {
+       "id": "minha-empresa",
+       "name": "Minha Empresa"
+     },
+     "surface": "agent-app",
      "author": "Seu Nome",
      "description": "Integração do Meu Assistente com regras de código e MCP.",
-     "rulesFormat": "markdown",
-     "workspaceRulesLocation": ".meu-assistente/rules.md",
-     "workspaceSkillsLocation": ".meu-assistente/skills/<name>/SKILL.md",
-     "workspaceMcpConfigPath": "mcp.json",
+     "capabilities": {
+       "skills": true,
+       "modularRules": true,
+       "consolidatedRules": true,
+       "mcp": true,
+       "profiles": true,
+       "slashCommands": false
+     },
+     "rules": {
+       "mode": "both",
+       "format": "markdown",
+       "consolidatedFile": "AGENTS.md",
+       "modularPattern": ".meu-assistente/rules/<name>.md"
+     },
+     "skills": {
+       "symlinkMode": "file",
+       "workspaceLocation": ".meu-assistente/skills/<name>/SKILL.md"
+     },
+     "mcp": {
+       "rootKey": "mcpServers",
+       "format": "json",
+       "workspaceLocation": "mcp.json"
+     },
      "docsUrl": "https://meu-assistente.dev/docs"
    }
    ```
-3. Adicione `logo.png` (formato quadrado, ex: 48x48px) e `README.md`.
+3. *(Opcional)* Adicione `logo.png` (formato quadrado, ex: 128x128px) e `README.md`.
 4. Execute `node scripts/build-registry.js` para atualizar o `registry.json`.
 5. Abra um **Pull Request**!
 

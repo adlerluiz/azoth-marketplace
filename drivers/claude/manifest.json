@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
-  "schemaVersion": "2.0.0",
+  "schemaVersion": "1.0.0",
   "version": "1.0.0",
   "id": "claude",
   "name": "Claude Code & Desktop",
-  "category": "CLI / Agent",
-  "vendor": "Anthropic",
-  "author": "Anthropic",
+  "vendor": { "id": "anthropic", "name": "Anthropic" },
+  "surface": "cli",
+  "author": "Adler Luiz",
   "description": "CLI oficial Claude Code e aplicativo Claude Desktop com suporte a CLAUDE.md, ~/.claude.json e MCP Servers.",
   "capabilities": {
     "skills": true,

@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
-  "schemaVersion": "2.0.0",
+  "schemaVersion": "1.0.0",
   "version": "1.0.0",
   "id": "kiro",
-  "name": "AWS Kiro IDE",
-  "category": "IDE / Editor",
-  "vendor": "Amazon Web Services",
-  "author": "AWS",
+  "name": "Kiro",
+  "vendor": { "id": "aws", "name": "Amazon Web Services" },
+  "surface": "ide",
+  "author": "Adler Luiz",
   "description": "IDE agêntica da AWS com suporte a agentes autônomos, regras modulares e integrações com MCP.",
   "capabilities": {
     "skills": true,

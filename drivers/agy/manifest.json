@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
-  "schemaVersion": "2.0.0",
+  "schemaVersion": "1.0.0",
   "version": "1.0.0",
   "id": "agy",
   "name": "Agy",
-  "category": "CLI / Agent",
-  "vendor": "Google",
+  "vendor": { "id": "google", "name": "Google" },
+  "surface": "cli",
   "author": "DeepMind",
   "description": "Interface de Linha de Comando (CLI) oficial do Antigravity (AGY) para terminal com suporte a slash commands, subagentes e customizações.",
   "capabilities": {

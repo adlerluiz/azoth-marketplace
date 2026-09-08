@@ -8,6 +8,18 @@ const OUTPUT_FILE = path.join(ROOT_DIR, 'registry.json');
 
 const REPO_RAW_BASE = 'https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main';
 
+function assertDriverManifest(manifest, manifestPath) {
+  if (!manifest.id || !manifest.name || !manifest.description) {
+    throw new Error(`${manifestPath} precisa declarar id, name e description.`);
+  }
+  if (!manifest.vendor?.id || !manifest.vendor?.name) {
+    throw new Error(`${manifestPath} precisa declarar vendor.id e vendor.name.`);
+  }
+  if (!['cli', 'ide', 'agent-app', 'extension', 'custom'].includes(manifest.surface)) {
+    throw new Error(`${manifestPath} possui surface inválida: ${manifest.surface ?? '(ausente)'}.`);
+  }
+}
+
 function buildRegistry() {
   console.log('🔄 Construindo catálogo do Azoth Marketplace...');
 
@@ -33,6 +45,7 @@ function buildRegistry() {
         try {
           const raw = fs.readFileSync(manifestPath, 'utf-8');
           const manifest = JSON.parse(raw);
+          assertDriverManifest(manifest, manifestPath);
 
           const hasLogo = fs.existsSync(path.join(DRIVERS_DIR, folder, 'logo.png'));
           const hasReadme = fs.existsSync(path.join(DRIVERS_DIR, folder, 'README.md'));
@@ -41,9 +54,9 @@ function buildRegistry() {
             id: manifest.id || folder,
             name: manifest.name || folder,
             version: manifest.version || '1.0.0',
-            author: manifest.author || manifest.vendor || 'Community',
+            author: manifest.author || manifest.vendor?.name || 'Community',
             vendor: manifest.vendor,
-            category: manifest.category || 'Custom',
+            surface: manifest.surface,
             description: manifest.description || '',
             iconUrl: hasLogo ? `${REPO_RAW_BASE}/drivers/${folder}/logo.png` : undefined,
             manifestUrl: `${REPO_RAW_BASE}/drivers/${folder}/manifest.json`,

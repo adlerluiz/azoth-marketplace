@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/marketplace.schema.json",
   "version": "1.0.0",
-  "updatedAt": "2026-09-07T12:51:51.499Z",
+  "updatedAt": "2026-09-08T20:19:45.894Z",
   "name": "Azoth Community Marketplace & Registry",
   "description": "Repositório central de drivers de IA, assistentes de código e plugins para o ecossistema Azoth / AI Hub.",
   "drivers": [
@@ -9,9 +9,12 @@
       "id": "agy",
       "name": "Agy",
       "version": "1.0.0",
-      "author": "DeepMind",
-      "vendor": "Google",
-      "category": "CLI / Agent",
+      "author": "Adler Luiz",
+      "vendor": {
+        "id": "google",
+        "name": "Google"
+      },
+      "surface": "cli",
       "description": "Interface de Linha de Comando (CLI) oficial do Antigravity (AGY) para terminal com suporte a slash commands, subagentes e customizações.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/agy/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/agy/manifest.json",
@@ -23,9 +26,12 @@
       "id": "antigravity",
       "name": "Antigravity",
       "version": "1.0.0",
-      "author": "DeepMind",
-      "vendor": "Google",
-      "category": "IDE / Editor",
+      "author": "Adler Luiz",
+      "vendor": {
+        "id": "google",
+        "name": "Google"
+      },
+      "surface": "agent-app",
       "description": "Ambiente de Programação Agêntica com suporte nativo a AGENTS.md, GEMINI.md, .agents/ e MCP Servers.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/antigravity/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/antigravity/manifest.json",
@@ -37,9 +43,12 @@
       "id": "claude",
       "name": "Claude Code & Desktop",
       "version": "1.0.0",
-      "author": "Anthropic",
-      "vendor": "Anthropic",
-      "category": "CLI / Agent",
+      "author": "Adler Luiz",
+      "vendor": {
+        "id": "anthropic",
+        "name": "Anthropic"
+      },
+      "surface": "cli",
       "description": "CLI oficial Claude Code e aplicativo Claude Desktop com suporte a CLAUDE.md, ~/.claude.json e MCP Servers.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/claude/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/claude/manifest.json",
@@ -49,11 +58,14 @@
     },
     {
       "id": "codex",
-      "name": "OpenAI Codex",
+      "name": "Codex",
       "version": "1.0.0",
-      "author": "OpenAI",
-      "vendor": "OpenAI",
-      "category": "CLI / Agent",
+      "author": "Adler Luiz",
+      "vendor": {
+        "id": "openai",
+        "name": "OpenAI"
+      },
+      "surface": "cli",
       "description": "Agente autônomo de código e modelo da OpenAI para execução de instruções, automação e geração de software.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/codex/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/codex/manifest.json",
@@ -63,11 +75,14 @@
     },
     {
       "id": "copilot",
-      "name": "GitHub Copilot",
+      "name": "Copilot",
       "version": "1.0.0",
-      "author": "GitHub",
-      "vendor": "GitHub / Microsoft",
-      "category": "Extension / Assistant",
+      "author": "Adler Luiz",
+      "vendor": {
+        "id": "github-microsoft",
+        "name": "GitHub / Microsoft"
+      },
+      "surface": "extension",
       "description": "Assistente integrado ao VS Code e ecossistema GitHub com suporte a .github/copilot-instructions.md e custom rules.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/copilot/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/copilot/manifest.json",
@@ -77,11 +92,14 @@
     },
     {
       "id": "cursor",
-      "name": "Cursor IDE",
+      "name": "Cursor",
       "version": "1.0.0",
-      "author": "Anysphere",
-      "vendor": "Anysphere",
-      "category": "IDE / Editor",
+      "author": "Adler Luiz",
+      "vendor": {
+        "id": "anysphere",
+        "name": "Anysphere"
+      },
+      "surface": "ide",
       "description": "Editor de código nativo baseado em IA com suporte a .cursor/rules/ (.mdc), .cursorrules e MCP Servers.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/cursor/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/cursor/manifest.json",
@@ -91,30 +109,19 @@
     },
     {
       "id": "kiro",
-      "name": "AWS Kiro IDE",
+      "name": "Kiro",
       "version": "1.0.0",
-      "author": "AWS",
-      "vendor": "Amazon Web Services",
-      "category": "IDE / Editor",
+      "author": "Adler Luiz",
+      "vendor": {
+        "id": "aws",
+        "name": "Amazon Web Services"
+      },
+      "surface": "ide",
       "description": "IDE agêntica da AWS com suporte a agentes autônomos, regras modulares e integrações com MCP.",
       "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/kiro/logo.png",
       "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/kiro/manifest.json",
       "docsUrl": "https://aws.amazon.com/kiro",
       "readmeUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/kiro/README.md",
-      "tags": []
-    },
-    {
-      "id": "windsurf",
-      "name": "Codeium Windsurf",
-      "version": "1.0.0",
-      "author": "Codeium",
-      "vendor": "Codeium",
-      "category": "IDE / Editor",
-      "description": "IDE colaborativa com IA Cascade, suporte a .windsurfrules, regras modulares em .windsurf/ e MCP Servers.",
-      "iconUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/windsurf/logo.png",
-      "manifestUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/windsurf/manifest.json",
-      "docsUrl": "https://codeium.com/windsurf",
-      "readmeUrl": "https://raw.githubusercontent.com/adlerluiz/azoth-marketplace/main/drivers/windsurf/README.md",
       "tags": []
     }
   ],

@@ -1,12 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/adlerluiz/azoth/main/schemas/driver.schema.json",
-  "schemaVersion": "2.0.0",
+  "schemaVersion": "1.0.0",
   "version": "1.0.0",
   "id": "copilot",
-  "name": "GitHub Copilot",
-  "category": "Extension / Assistant",
-  "vendor": "GitHub / Microsoft",
-  "author": "GitHub",
+  "name": "Copilot",
+  "vendor": { "id": "github-microsoft", "name": "GitHub / Microsoft" },
+  "surface": "extension",
+  "author": "Adler Luiz",
   "description": "Assistente integrado ao VS Code e ecossistema GitHub com suporte a .github/copilot-instructions.md e custom rules.",
   "capabilities": {
     "skills": false,
